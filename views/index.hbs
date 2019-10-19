@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+             <div class="col-sm-4 row">
+                <div class="card">
+                    <div class="text-center"><img src="images/iphone.jpg" class="card-img-top" alt="..."></div>
+                    <div class="card-body">
+                        <h5 class="card-title font title">amr</h5>
+
+                        <p class="card-text data">NETWORK:amr <br><br>
+                            LAUNCH: amr<br><br>
+                            BODY: amr
+                        </p>
+
+                        <br><br>
+                        <div>
+                            <div class="price float-left">$ 9000</div>
+
+                            <a href="/buy/9955555/155520" class="btn btn-primary float-right">Buy</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 row">
+                <div class="card">
+                    <div class="text-center"><img src="images/iphone.jpg" class="card-img-top" alt="..."></div>
+                    <div class="card-body">
+                        <h5 class="card-title font title">amr</h5>
+
+                        <p class="card-text data">NETWORK:amr <br><br>
+                            LAUNCH: amr<br><br>
+                            BODY: amr
+                        </p>
+
+                        <br><br>
+                        <div>
+                            <div class="price float-left">$ 9000</div>
+
+                            <a href="/buy/asdasd/5555" class="btn btn-primary float-right">Buy</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {{#each products}}
+            <div class="col-sm-4 row">
+                <div class="card">
+                    <div class="text-center"><img src="images/iphone.jpg" class="card-img-top" alt="..."></div>
+                    <div class="card-body">
+                        <h5 class="card-title font title">{{this.name}}</h5>
+
+                        <p class="card-text data">NETWORK:{{this.network}} <br><br>
+                            LAUNCH: {{this.launch}}<br><br>
+                            BODY: {{this.body}}
+                        </p>
+
+                        <br><br>
+                        <div>
+                            <div class="price float-left">$ 9000</div>
+
+                            <a href="/buy/{{this.id}}/{{this.launch}}" class="btn btn-primary float-right">Buy</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            {{/each}}
+        </div>
+    </div>
+
+
+</body>
+
+
+
+</html>

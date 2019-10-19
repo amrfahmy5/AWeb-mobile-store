@@ -1,0 +1,48 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">Mobile Store</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+   
+
+    <ul class="navbar-nav Lr-auto ">
+     
+      <li class="nav-item ">
+        
+        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i>shooping-cart</a>
+        
+      </li>
+      <i class="fas fa-users"></i>
+      
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <li class="nav-item dropdown"></li>
+          User-mangement
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          {{#if check}}
+              <a class="dropdown-item" href="/users/profile">Profile</a>
+          <a class="dropdown-item" href="/users/logout">Sign Out</a>
+          {{else}}
+              <a class="dropdown-item" href="/users/login">Sign In</a>
+          <a class="dropdown-item" href="/users/signup">Sign UP</a>
+          {{/if}}
+          
+          
+
+        </div>
+      </li>
+     
+    </ul>
+ 
+  </div>
+</nav>
+</body>
+</html>
